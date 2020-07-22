@@ -44,19 +44,6 @@ resource "aws_security_group" "task2-sg" {
   }
 }
 
-/*
-#Subnet
-resource "aws_subnet" "efs-subnet" {
-  vpc_id = aws_security_group.task2-sg.vpc_id
-  availability_zone = "ap-south-1a"
-  cidr_block = "172.31.48.0/24"
-
-  depends_on = [
-    aws_security_group.task2-sg,
-  ]
-}
-*/
-
 #EFS
 resource "aws_efs_file_system" "webefs" {
   creation_token = "myefs"
