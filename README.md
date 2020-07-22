@@ -1,0 +1,1 @@
+# terraform_task2_content
